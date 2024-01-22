@@ -26,5 +26,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 44712755200
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
-# Inherit from the vendor_sony_tama
+# Inherit from vendor_sony_tama
+include vendor/sony/tama/common/BoardConfigVendor.mk
 include vendor/sony/tama/akari/BoardConfigVendor.mk

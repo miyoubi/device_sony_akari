@@ -10,7 +10,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from device_sony_tama
 $(call inherit-product, device/sony/tama/common.mk)
 
-# Inherit from vendor_sony_tama
+# Include from vendor_sony_tama
+$(call inherit-product-if-exists, vendor/sony/tama/common/common-vendor.mk)
 $(call inherit-product-if-exists, vendor/sony/tama/akari/akari-vendor.mk)
 
 # Boot animation
