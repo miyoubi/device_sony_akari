@@ -1,36 +1,25 @@
-# Device Tree for Xperia XZ2 (akari)
- By Sjll
-The Xperia (codenamed _"akari"_) is a smartphone from Sony Mobile.
-It was released in 2018.
+# Device Tree for the Xperia XZ2
 
-| Basic                   | Spec Sheet                                                                                                                     |
-| -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
-| CPU                     | Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.7 GHz Kryo 385 Silver)                                                                |
-| Chipset                 | Qualcomm SDM845 Snapdragon 845                                                                                                 |
-| GPU                     | Adreno 630                                                                                                                     |
-| Memory                  | 4/6 GB RAM                                                                                                                     |
-| Shipped Android Version | 8.1                                                                                                                            |
-| Storage                 | 64 GB                                                                                                                  |
-| Battery                 | Non-removable Li-Po 3180 mAh battery                                                                                           |
-| Display                 | Toppest LCD, 1080 x 2160 pixels, 18:9 ratio (~424 ppi density)                                                                |
-| Camera (Back)           | 19 MP (f/2.0, 25mm, 1/2.3", 1.22 µm), gyro EIS, predictive phase detection and laser AF, LED flash, 4K at 30fps, 1080p at 30, 60fps or 960fps |
-| Camera (Front)          | 5 MP (f/2.2, 1/5"), gyro EIS, 1080p                                                                    |
+The Xperia XZ2 (Codenamed "akari") is a flagship smartphone from Sony released in February 2018.
 
-Copyright 2018 - The LineageOS Project.
+## Device Specifications
 
-![Xperia XZ2](https://images-na.ssl-images-amazon.com/images/I/71nC8hZVTIL._SL1500_.jpg "Xperia XZ2")
+| Feature                 | Specification                                                                       |
+| :---------------------- | :-----------------------------------------------------------------------------------|
+| Chipset                 | Qualcomm® Snapdragon™ 845 (10 nm)                                                   |
+| CPU                     | Octa-Core (4x 2.7 GHz Kryo 385 Gold & 4x 1.7 GHz Kryo 385 Silver)                   |
+| GPU                     | Adreno 630                                                                          |
+| Memory                  | 4/6 GB LPDDR4X RAM                                                                  |
+| Shipped Android Version | 8                                                                                   |
+| Storage                 | 64 GB UFS 2.1 (Expandable with Micro SDCard)                                        |
+| SIM                     | Single/Dual SIM (1/2x Nano-SIMs)                                                    |
+| Battery                 | 3180 mAh Li-Po (Non-Removable), 18W Wired Fast Charging, 9W Wireless Fast Charging  |
+| Dimensions              | 153 x 72 x 11.1 mm (6.02 x 2.83 x 0.44 in)                                          |
+| Display                 | 5.7 inch, 1080 x 2160 pixels, TRILUMINOS, X-Reality, P-OLED, HDR10                  |
+| Camera                  | 19 MP (Main), 5 MP (Front)                                                          |
+| Fingerprint             | Back Side, under the camera (Rear-Mounted)                                          |
+| Sensors                 | Accelerometer, Gyro, Proximity, Barometer, Compass, Color Spectrum                  |
 
+## Device Picture
 
-## Temporary build instructions
-
-```
-# Compiling
-$ m[ake|ka] bootimage systemimage
-
-# Installing
-$ fastboot --disable-verity --disable-verification flash vbmeta stock_vbmeta.img
-$ fastboot flash boot boot.img
-$ fastboot flash system system.img
-$ fastboot -w reboot
-```
-
+![Xperia XZ2](https://i.imgur.com/Qm1y0GP.png)
