@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from tama-common
+# Inherit from device_sony_tama
 include device/sony/tama-common-kddi/BoardConfigCommon.mk
 
 DEVICE_PATH := device/sony/akari_kddi
@@ -26,5 +26,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 44712755200
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
-# Inherit from the proprietary version
-include vendor/sony/akari/BoardConfigVendor.mk
+# Inherit from the vendor_sony_tama
+include vendor/sony/tama/akari/BoardConfigVendor.mk
