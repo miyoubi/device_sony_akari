@@ -24,6 +24,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Disable EPPE
 TARGET_DISABLE_EPPE := true
 
+# Felica NFC
+TARGET_USES_NFC-F := true
+
 # Inherit from tama-common-kddi
 $(call inherit-product, device/sony/tama-common-kddi/common.mk)
 
