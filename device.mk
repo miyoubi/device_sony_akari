@@ -21,6 +21,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Disable EPPE
+TARGET_DISABLE_EPPE := true
+
 # Inherit from tama-common-kddi
 $(call inherit-product, device/sony/tama-common-kddi/common.mk)
 
