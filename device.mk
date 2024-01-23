@@ -28,7 +28,7 @@ TARGET_DISABLE_EPPE := true
 TARGET_USES_NFC-F := true
 
 # Inherit from tama-common-kddi
-$(call inherit-product, device/sony/tama-common-kddi/common.mk)
+$(call inherit-product, device/sony/tama-common/common.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \

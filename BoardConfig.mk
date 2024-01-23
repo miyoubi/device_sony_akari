@@ -5,7 +5,7 @@
 #
 
 # Inherit from tama-common
-include device/sony/tama-common-kddi/BoardConfigCommon.mk
+include device/sony/tama-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/sony/akari_kddi
 
